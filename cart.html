@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+     *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+     }
+    
+     .cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40vh;
+     }
+div{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        /* min-height: 40vh; */
+        margin-top: -40px;
+}
+.shop-now{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 8px;
+    border-radius: 7px;
+}
+.shop{
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.continue-shopping{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    color: rgb(17, 17, 17);
+    padding: 20px;
+    width: 100%;
+    opacity: 80%;
+    position: fixed;
+    /* z-index: 999; */
+ }
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+   background-color: aquamarine;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+header nav a {
+    color: rgb(17, 17, 17);
+    text-decoration:none;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+a:hover{
+   background: white;
+   /* border: 5px; */
+   border-radius: 3px;
+   /* transition: .5s; */
+   padding: 5px;
+ }
+ header .search-bar button {
+    padding: 6px;
+    background-color: #ffa41b;
+    border: none;
+    cursor: pointer;
+}
+.search-bar{
+    margin-top: 3px;
+    padding: 5px;
+    
+}
+input{
+    padding: 4px;
+    margin: 3px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">My Shop</div>
+        <nav>
+            <a href="#">Home</a>
+            <a target="_blank" href="products.html">Products</a>
+            <a target="_blank" href="cart.html">Cart</a>
+            <a target="_blank" href="login.html">LogIn</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="search products">
+            <button> Search </button>
+        </div>
+    </header>
+
+    <section class="cart">
+    <img src="Images/cart.svg" width="300px" height="500px">
+</section>
+<div>    
+<h1>Your basket is empty!</h1>    
+</div>
+<br><br><br><br> 
+<section class="shop-now">
+<button class="shop">Shop now</button>  <br><br>
+</section>
+<br> <br>
+<a class="continue-shopping" href="shopping">Continue Shopping</a>
+</body>
+</html>
